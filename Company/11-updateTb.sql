@@ -1,0 +1,4 @@
+-- ALTER TABLE employers
+-- MODIFY COLUMN company_name VARCHAR(250);
+ALTER TABLE users
+MODIFY COLUMN full_name VARCHAR(300);

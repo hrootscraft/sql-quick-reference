@@ -1,0 +1,29 @@
+-- CREATE DATABASE shop;
+-- CREATE TABLE IF NOT EXISTS products(
+--     name VARCHAR(200),
+--     price NUMERIC(10, 2),
+--     description TEXT,
+--     amt_in_stock SMALLINT,
+--     image_path VARCHAR(500)
+-- );
+-- INSERT INTO products(
+--         price,
+--         name,
+--         description,
+--         amt_in_stock,
+--         image_path
+--     )
+-- VALUES (
+--         12.99,
+--         'A Book',
+--         'This is a book. And this can be longer',
+--         39,
+--         'uploads/images/products/a-book.js'
+--     );
+-- ALTER TABLE products
+-- MODIFY COLUMN name VARCHAR(200) NOT NULL,
+-- MODIFY COLUMN price NUMERIC(10, 2) NOT NULL CHECK (price > 0),
+-- MODIFY COLUMN description TEXT NOT NULL,
+-- MODIFY COLUMN amt_in_stock SMALLINT CHECK (amt_in_stock >= 0)
+ALTER TABLE products
+ADD COLUMN id INT PRIMARY KEY AUTO_INCREMENT;

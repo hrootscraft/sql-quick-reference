@@ -1,0 +1,12 @@
+-- CREATE DATABASE restaurant;
+
+CREATE TABLE payment_methods (
+    id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(200)
+);
+
+CREATE TABLE tables (
+    id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    num_seats INT UNSIGNED,
+    category VARCHAR(200)
+);
